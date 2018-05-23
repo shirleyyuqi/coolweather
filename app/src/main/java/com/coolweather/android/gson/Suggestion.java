@@ -2,10 +2,6 @@ package com.coolweather.android.gson;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by phenix on 2018/5/7.
- */
-
 public class Suggestion {
 
     @SerializedName("comf")
@@ -14,10 +10,9 @@ public class Suggestion {
     @SerializedName("cw")
     public CarWash carWash;
 
-    @SerializedName("sport")
     public Sport sport;
 
-    public class Comfort{
+    public class Comfort {
 
         @SerializedName("txt")
         public String info;
@@ -31,10 +26,11 @@ public class Suggestion {
 
     }
 
-    public class Sport{
+    public class Sport {
 
         @SerializedName("txt")
         public String info;
+
     }
 
 }
